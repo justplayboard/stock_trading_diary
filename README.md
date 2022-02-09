@@ -1,1 +1,1 @@
-"# stock_trading_diary" 
+주식매매일지
