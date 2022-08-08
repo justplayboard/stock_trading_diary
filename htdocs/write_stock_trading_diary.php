@@ -33,7 +33,7 @@
 			<article>
 					<button name="add_row" class="btn btn-default btn-lg pull-right">행추가</button>
 				<br>
-				<form class="" action="process.php" method="post">
+				<form class="" method="post">
 					<div class="form-group">
 						<label for="form-title" name="title" id="title">제목</label>
     				<input type="text" class="form-control" name="title" id="form-title" placeholder="제목을 적어주세요.">
@@ -85,7 +85,7 @@
 						</script>
 					</div>
 					<div class="" style="float: right; width: 100%;">
-						<input type="submit" name="name" class="btn btn-default btn-lg" style="float: right;">
+						<input type="submit" name="name" class="btn btn-default btn-lg" style="float: right;" onclick="javascript: form.action='process.php'">
 					</div>
 			 	</form>
 			</article>

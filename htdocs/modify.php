@@ -44,12 +44,11 @@ $conn=db_init($config["host"],$config["duser"],$config["dpw"],$config["dname"]);
 			<article>
 					<button name="add_row" class="btn btn-default btn-lg pull-right">행추가</button>
 				<br>
-				<form class="" action="process_m.php" method="post">
+				<form class="" method="post">
 					<div class="form-group">
-						<label for="form-title" name="title" style="margin-right: 950px;">제목(수정 시 새로 생성)</label>
+						<label for="form-title" name="title" style="margin-right: auto;">제목(수정 시 새로 생성)</label>
 									<?php
-                    $sql="SELECT title, stock_name, p_a, p_d, s_a, s_d, profit, p_m FROM write_stock
-                    WHERE user_id='".$_SESSION['user_id']."' AND title='".$_POST['m_value']."';";
+                    $sql="SELECT title, stock_name, p_a, p_d, s_a, s_d, profit, p_m FROM write_stock WHERE user_id='".$_SESSION['user_id']."' AND title='".$_POST['m_value']."';";
                     $result = mysqli_query($conn,$sql);
 										if ($row=mysqli_fetch_assoc($result)) {
 											echo '
@@ -117,19 +116,20 @@ $conn=db_init($config["host"],$config["duser"],$config["dpw"],$config["dname"]);
 						</script>
 					</div>
           <div class="" style="float: right; width: 100%;">
-						<input type="submit" name="name" class="btn btn-default btn-lg" style="float: right;">
+						<input type="submit" name="name" class="btn btn-default btn-lg" style="float: right;" onclick="javascript: form.action='process_m.php'">
 					</div>
-			 	</form>
-			</article>
-			<hr style="width: 100%;">
-			<div id="control" style="float: right;">
-				<div class="btn-group" role="group" aria-label="...">
-					<input type="button"value="white"id="white_btn"class="btn btn-default btn-lg"/>
-					<input type="button"value="black"id="black_btn"class="btn btn-default btn-lg"/>
-				</div>
-				<a href="http://localhost/write_stock_trading_diary.php" class="btn btn-danger btn-lg">쓰기</a>
-				<script src="http://localhost/script.js"></script>
-			</div>
+			    <hr style="width: 100%;">
+			    <div id="control" style="float: right;">
+            <div class="btn-group" role="group" aria-label="...">
+              <input type="button"value="white"id="white_btn"class="btn btn-default btn-lg"/>
+					    <input type="button"value="black"id="black_btn"class="btn btn-default btn-lg"/>
+				    </div>
+			      <a href="http://localhost/write_stock_trading_diary.php" class="btn btn-danger btn-lg">쓰기</a>
+            <input type="submit" value="삭제" class="btn btn-success btn-lg" onclick="javascript: form.action='delete_m.php'">
+				    <script src="http://localhost/script.js"></script>
+			    </div>
+        </form>
+      </article>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script src="http://localhost/bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
