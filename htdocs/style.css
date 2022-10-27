@@ -39,6 +39,7 @@ table.type09 td {
 }
 #table{
   width: 130px;
+  height: 30px;
 }
 table.type11 {
   border-collapse: separate;

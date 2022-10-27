@@ -55,9 +55,9 @@
 	              <tr name="stock">
 	                <td><input type="text" name="stock_name[]" placeholder="주식명" id="table"></td>
 	                <td><input type="text" name="p_a[]" placeholder="숫자만 입력" id="table"></td>
-	                <td><input type="text" name="p_d[]" placeholder="yyyy-mm-dd" id="table"></td>
+	                <td><input type="date" name="p_d[]" id="table"></td>
 	                <td><input type="text" name="s_a[]" placeholder="숫자만 입력" id="table"></td>
-	                <td><input type="text" name="s_d[]" placeholder="yyyy-mm-dd" id="table"></td>
+	                <td><input type="date" name="s_d[]" id="table"></td>
 	                <td><input type="text" name="profit[]" placeholder="숫자만 입력" id="table"></td>
 	                <td><input type="text" name="p_m[]" placeholder="숫자만 입력" id="table"></td>
 	              </tr>
@@ -68,9 +68,9 @@
 								var rowItem = '<tr name="stock">' +
 		            '<td><input type="text" name="stock_name[]" placeholder="주식명" id="table"></td>' +
 		            '<td><input type="text" name="p_a[]" placeholder="숫자만 입력" id="table"></td>' +
-		            '<td><input type="text" name="p_d[]" placeholder="yyyy-mm-dd" id="table"></td>' +
+		            '<td><input type="date" name="p_d[]" id="table"></td>' +
 		            '<td><input type="text" name="s_a[]" placeholder="숫자만 입력" id="table"></td>' +
-		            '<td><input type="text" name="s_d[]" placeholder="yyyy-mm-dd" id="table"></td>' +
+		            '<td><input type="date" name="s_d[]" id="table"></td>' +
 		            '<td><input type="text" name="profit[]" placeholder="숫자만 입력" id="table"></td>' +
 		            '<td><input type="text" name="p_m[]" placeholder="숫자만 입력" id="table"></td>' +
 								'<td><button name="delete_row" class="btn btn-default">행삭제</button></td>' +
