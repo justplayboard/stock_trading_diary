@@ -13,7 +13,7 @@
 <?php
   } else{
 ?>
-	<div style='font-family:"malgun gothic"; color:red;'><?php echo $uid; ?>중복된아이디입니다.<div>
+	<div style='font-family:"malgun gothic"; color:red;'><?php echo $uid; ?>는 중복된 아이디입니다.<div>
 <?php
   }
 ?>
