@@ -7,6 +7,7 @@ function color(){
   } else {
     document.getElementById('target').className='white';
   }
+  return;
 }
 
 function tLS(obj){
