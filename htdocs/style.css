@@ -1,34 +1,30 @@
-body.white{
+body.white {
   background-color: white;
   color: black;
 }
-body.black{
+body.black {
   background-color: black;
   color: white;
 }
-.container{
+.container {
   padding-top: 20px;
 }
-.stock_input{
+.stock_input {
   width: 130px;
   height: 30px;
 }
-#control{
+#control {
   margin-bottom: 40px;
   float: right;
 }
-#login{
+#login, #register {
   width: 300px;
   margin: auto;
 }
-#register{
-  width: 300px;
-  margin: auto;
-}
-#title{
+#title {
   margin-right: auto;
 }
-#submit{
+#submit {
   float: right;
 }
 table.type09 {

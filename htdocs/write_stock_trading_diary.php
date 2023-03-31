@@ -97,8 +97,8 @@
 			<hr style="width: 100%;">
 			<div id="control">
 				<div class="btn-group" role="group" aria-label="...">
-					<input type="button" value="white" id="white_btn" class="btn btn-default btn-lg"/>
-					<input type="button" value="black" id="black_btn" class="btn btn-default btn-lg"/>
+					<input type="button" value="white" id="white_btn" class="btn btn-default btn-lg" onclick="color();"/>
+					<input type="button" value="black" id="black_btn" class="btn btn-default btn-lg" onclick="color();"/>
 				</div>
 				<a href="http://localhost/write_stock_trading_diary.php" class="btn btn-danger btn-lg">쓰기</a>
 			</div>

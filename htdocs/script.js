@@ -1,12 +1,13 @@
-wbtn=document.getElementById('white_btn');
-wbtn.addEventListener('click',function(){
-  document.getElementById('target').className='white';
-});
-
-bbtn=document.getElementById('black_btn');
-bbtn.addEventListener('click',function(){
-  document.getElementById('target').className='black';
-});
+function color(){
+  btn = event.target.id;
+  if (btn == 'white_btn') {
+    document.getElementById('target').className='white';
+  } else if (btn == 'black_btn') {
+    document.getElementById('target').className='black';
+  } else {
+    document.getElementById('target').className='white';
+  }
+}
 
 function tLS(obj){
   const value = Number(obj.value.replaceAll(',', ''));
