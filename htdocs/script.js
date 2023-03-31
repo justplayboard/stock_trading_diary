@@ -1,5 +1,5 @@
 function color(){
-  btn = event.target.id;
+  const btn = event.target.id;
   if (btn == 'white_btn') {
     document.getElementById('target').className='white';
   } else if (btn == 'black_btn') {
